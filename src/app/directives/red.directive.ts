@@ -6,12 +6,12 @@ import {Directive, ElementRef, HostListener, Renderer2} from '@angular/core';
 export class RedDirective {
 
   constructor(private element: ElementRef, private renderer: Renderer2) {
-    //1st way to style
+    // 1st way to style
     // console.log(element);
     // console.log(element.nativeElement);
     // element.nativeElement.style.background = 'red';
 
-    //2nd way
+    // 2nd way
     // renderer.setStyle(element.nativeElement, 'background', 'red');
   }
   @HostListener('mouseover')
