@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular-hw07-pipesAndDirectives';
+
+  asyncValue = new Promise(resolve => {
+    setTimeout(() => {
+        resolve('this is magic');
+    }, 1000);
+  });
+
+  date = new Date();
+
+  price = 100;
+
+  user = {name: 'rostik', age: 21, status: false}
+
+  e = 2.712468155484851;
 }
